@@ -1,12 +1,14 @@
+# Define parameters for the Event Grid trigger and metadata
 param($eventGridEvent, $TriggerMetadata)
 
-# Assuming $resourceId is the ResourceId of your Function App
+# Retrieve the Azure Web App instance by specifying the Resource Group and Name
+# Replace with the actual names of your Resource Group and Web App
 $webApp = Get-AzWebApp -ResourceGroupName "eventdetectfuncv2" -Name "eventdetectfuncv2"
 
-# Access auth settings
+# Retrieve the authentication settings from the Web App configuration
 $authSettings = $webApp.SiteConfig.AuthSettings
 
-# Check if authentication is enabled
+# Determine if authentication is enabled by checking the 'Enabled' property
 if ($authSettings.Enabled -eq $true) {
     Write-Output "Authentication is enabled for the Function App: $resourceId"
 } else {
