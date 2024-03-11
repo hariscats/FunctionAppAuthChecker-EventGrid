@@ -2,7 +2,7 @@
 
 ## Overview
 
-This proof of concept (POC) project provides an Azure Function that triggers via Event Grid to enforce authentication settings on newly created Function Apps. Since Azure Policy does not currently support denying creation of Function Apps without configured authentication, this function acts as a safeguard to ensure compliance with organizational security policies.
+This proof of concept (POC) project provides an Azure Function that triggers via Event Grid to enforce authentication settings on newly created Function Apps. Since Azure Policy does not currently support denying creation of Function Apps without configured authentication, this function acts as a safeguard to ensure compliance with organizational security policies. This is currently a work in progress.
 
 ## Functionality
 
