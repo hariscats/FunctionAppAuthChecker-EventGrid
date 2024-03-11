@@ -3,7 +3,7 @@ param($eventGridEvent, $TriggerMetadata)
 
 # Retrieve the Azure Web App instance by specifying the Resource Group and Name
 # Replace with the actual names of your Resource Group and Web App
-$webApp = Get-AzWebApp -ResourceGroupName "eventdetectfuncv2" -Name "eventdetectfuncv2"
+$webApp = Get-AzWebApp -ResourceGroupName "Enter your Resource Group" -Name "Enter Name"
 
 # Retrieve the authentication settings from the Web App configuration
 $authSettings = $webApp.SiteConfig.AuthSettings
